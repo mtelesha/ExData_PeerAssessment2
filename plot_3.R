@@ -15,8 +15,8 @@ question_3 <- nei %>%
     summarise(sum = sum(Emissions))
 
 # create the plot
-question_3_plot <- ggplot(data = question_3, aes(x = year, y = sum, group = type, color = type)) +
+ggplot(data = question_3, aes(x = year, y = sum, group = type, color = type)) +
     geom_line(size = 1.2) +
     geom_point(size = 5)
 # save the last plot
-ggsave("plot_3.png")
+ggsave("plot_3.png", width = 4, height = 3)

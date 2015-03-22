@@ -34,4 +34,4 @@ ggplot(data = question_6, aes(x = year, y = sum, group = city, color = city)) +
     ylab("Emisions in Tons")
 
 # save the last plot
-ggsave("plot_6.png")
+ggsave("plot_6.png", width = 4, height = 3)

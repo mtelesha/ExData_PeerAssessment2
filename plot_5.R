@@ -33,4 +33,4 @@ question_5 <- question_5_data %>%
     ylab("Emisions in Tons")
 
 # save the last plot
-ggsave("plot_5.png")
+ggsave("plot_5.png", width = 4, height = 3)
